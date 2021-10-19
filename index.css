@@ -1,0 +1,77 @@
+#outerBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    background-color: white;
+    height: 65px;
+    align-items: center;
+
+}
+
+input {
+    background-color: transparent;
+    border: 0px solid;
+    width: 300px;
+}
+
+.dotd{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+li{
+    color: rgb(177, 170, 170);
+    font-size: 14px
+}
+
+#tshirtcontent{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+}
+
+#imageContainer{
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 0; */
+    width: 400px;
+    height: 200px;
+}
+
+#tshirtname{
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+    margin-left: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    color: black;
+    font-size: 23px;
+    text-align: center;
+    background: white;
+    border: 1px solid grey;
+    margin-left: 6px;
+    padding: 3px;
+  }

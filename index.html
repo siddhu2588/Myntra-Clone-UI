@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Myntra</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src='index.js'></script>
+</head>
+<body>
+    <div id="outerBox">
+        <header id="header">
+            <span style="flex-grow: 2;"></span>
+            <span style="flex-grow: 2;">
+                <img src="images/logo.png" style="height:55px; width:55px"  onclick="clickOnLogo()"/>
+            </span>
+            <span style="flex-grow: 2; text-transform: uppercase;
+            color: #3e4152;
+            letter-spacing: .08em;
+            font-size: 15px;
+            font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+            font-weight: bold;">MEN</span>
+            <span style="flex-grow: 2; text-transform: uppercase;
+            color: #3e4152;
+            letter-spacing: .08em;
+            font-size: 15px;
+            font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+            font-weight: bold;">WOMEN</span>
+            <span style="flex-grow: 2; text-transform: uppercase;
+            color: #3e4152;
+            letter-spacing: .08em;
+            font-size: 15px;
+            font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+            font-weight: bold;">KIDS</span>
+            <span style="flex-grow: 2; text-transform: uppercase;
+            color: #3e4152;
+            letter-spacing: .08em;
+            font-size: 15px;
+            font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+            font-weight: bold;">HOME AND LIVING</span>
+            <span style="flex-grow: 2; text-transform: uppercase;
+            color: #3e4152;
+            letter-spacing: .08em;
+            font-size: 15px;
+            font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+            font-weight: bold;">BEAUTY</span>
+            <span style="flex-grow: 2; text-transform: uppercase;
+            color: #3e4152;
+            letter-spacing: .08em;
+            font-size: 15px;
+            font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+            font-weight: bold;"></span>
+            <span style="flex-grow: 2; text-transform: uppercase;
+            color: #3e4152;
+            letter-spacing: .08em;
+            font-size: 15px;
+            font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+            font-weight: bold;"></span>
+            <span style="flex-grow: 2; text-transform: uppercase;
+            color: #3e4152;
+            letter-spacing: .08em;
+            font-size: 15px;
+            font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+            font-weight: bold;"></span>
+            <span style="flex-grow: 10; text-transform: uppercase;
+            color: #3e4152;
+            letter-spacing: .08em;
+            font-size: 15px;
+            font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+            font-weight: bold;">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search for products, brands and more"/>
+            </span>
+            <span style="flex-grow: 1; text-transform: uppercase;
+            color: #3e4152;
+            letter-spacing: .08em;
+            font-size: 15px;
+            font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+            font-weight: bold;">
+                <i class="fa fa-user" style="font-size: 20px;"></i>
+            </span>
+            <span style="flex-grow: 1; text-transform: uppercase;
+            color: #3e4152;
+            letter-spacing: .08em;
+            font-size: 15px;
+            font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+            font-weight: bold;">
+                <i class="fa fa-heart" style="font-size: 20px;"></i>
+            </span>
+            <span style="flex-grow: 1; text-transform: uppercase;
+            color: #3e4152;
+            letter-spacing: .08em;
+            font-size: 15px;
+            font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+            font-weight: bold;">
+                <i class="fa fa-shopping-bag" style="font-size: 20px"></i>
+            </span>
+        </header>
+        <br/>
+        <br/>
+        <div style="width: 100%; justify-content: center;">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img style="height: 350px; width: 100%;" src="images/carouselImage1.jpg"
+                    class="d-block w-100" alt="First Image">
+                    </div>
+                    <div class="carousel-item">
+                    <img style="height: 350px; width: 100%;" src="images/carouselImage4.jpg">
+                    </div>
+        
+                    <div class="carousel-item">
+                    <img style="height: 350px; width: 100%;" src="images/carouselImage3.jpeg" class="d-block w-100" alt="fourth Image">
+                    </div>
+            
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+        </div>
+        <br/>
+        <br/>
+        <span style="font-size: 25px; font-weight: bold; letter-spacing: 0.15cm;">DEALS OF THE DAY</span>
+        
+        <br>
+        <div class="dotd">
+            <div class="card" style="width: 18rem; border: 1.5px solid brown; flex-grow: 2;">
+                <img src="images/dotd1.jpg" class="card-img-top" alt="Men's Fashion Sale" style="width: 100%; height: 150px">
+                <div class="card-body" style="background-color: rgb(243, 235, 225);">
+                <p class="card-text"><span style="font-weight: bold;text-align:center; font-size: 22px; font-family:sans-serif">40-70% Off </span><br/><span style="font-size: 18px">On Myntra Unique Brands</span></p>
+                </div>
+            </div>
+            <div style="flex-grow: 2; width: 25px"></div>
+            <div class="card" style="width: 18rem; border: 1.5px solid brown; flex-grow: 2">
+                <img src="images/dotd2.jpg" class="card-img-top" alt="Men's Fashion Sale"  style="width: 100%; height: 150px">
+                <div class="card-body" style="background-color: rgb(243, 235, 225);">
+                <p class="card-text"><span style="font-weight: bold;text-align:center; font-size: 22px; font-family:sans-serif">40-70% Off </span><br/><span style="font-size: 18px">On Myntra Unique Brands</span></p>
+                </div>
+            </div>
+            <div style="flex-grow: 2; width: 25px"></div>
+            <div class="card" style="width: 18rem; border: 1.5px solid brown; flex-grow: 2">
+                <img src="images/dotd3.jpg" class="card-img-top" alt="Men's Fashion Sale"  style="width: 100%; height: 150px">
+                <div class="card-body" style="background-color: rgb(243, 235, 225);">
+                <p class="card-text"><span style="font-weight: bold;text-align:center; font-size: 22px; font-family:sans-serif">40-70% Off </span><br/><span style="font-size: 18px">On Myntra Unique Brands</span></p>
+                </div>
+            </div>
+            <div style="flex-grow: 2; width: 25px"></div>
+            <div class="card" style="width: 18rem; border: 1.5px solid brown; flex-grow: 2">
+                <img src="images/dotd4.jpg" class="card-img-top" alt="Men's Fashion Sale"  style="width: 100%; height: 150px">
+                <div class="card-body" style="background-color: rgb(243, 235, 225);">
+                <p class="card-text"><span style="font-weight: bold;text-align:center; font-size: 22px; font-family:sans-serif">40-70% Off </span><br/><span style="font-size: 18px">On Myntra Unique Brands</span></p>
+                </div>
+            </div>
+        </div>
+
+        <br/>
+        <br/>
+        <span style="font-size: 25px; font-weight: bold; letter-spacing: 0.15cm;">BIGGEST DEALS ON TOP BRANDS</span>
+        <br>
+        <div class="dotd">
+            <div class="card" style="width: 18rem; flex-grow: 2;">
+                <img src="images/bdof1.jpg" class="card-img-top" alt="Men's Fashion Sale" style="width: 100%; height: 150px">
+                <div class="card-body" style="background-color: rgb(247, 235, 243);">
+                <p class="card-text"><img src="images/uspolologo.jpg"style="width:250px; height:60px; float: centre"/><br/><span style="font-size: 18px;margin-left: 28%;">Upto 50% Off</span></p>
+                </div>
+            </div>
+            <div style="flex-grow: 2; width: 25px"></div>
+            <div class="card" style="width: 18rem; flex-grow: 2;">
+                <img src="images/bdof2.jpg" class="card-img-top" alt="Men's Fashion Sale" style="width: 100%; height: 150px">
+                <div class="card-body" style="background-color: rgb(247, 235, 243);">
+                <p class="card-text"><img src="images/wlogo.jfif"style="width:100px; height:60px; margin-left: 31%"/><br/><span style="font-size: 18px;margin-left: 34%;">30-60% Off</span></p>
+                </div>
+            </div>
+            <div style="flex-grow: 2; width: 25px"></div>
+            <div class="card" style="width: 18rem; flex-grow: 2;">
+                <img src="images/bdof3.jfif" class="card-img-top" alt="Men's Fashion Sale" style="width: 100%; height: 150px">
+                <div class="card-body" style="background-color: rgb(247, 235, 243);">
+                <p class="card-text"><img src="images/levis logo.jpg"style="width:180px; height:60px; margin-left: 18%"/><br/><span style="font-size: 18px;margin-left: 30%;">Min 30% Off</span></p>
+                </div>
+            </div>
+            <div style="flex-grow: 2; width: 25px"></div>
+            <div class="card" style="width: 18rem; flex-grow: 2;">
+                <img src="images/bdof4.jpg_230Wx334H" class="card-img-top" alt="Men's Fashion Sale" style="width: 100%; height: 150px">
+                <div class="card-body" style="background-color: rgb(247, 235, 243);">
+                <p class="card-text"><img src="images/veromodalogo.png"style="width:250px; height:60px; float: centre"/><br/><span style="font-size: 18px;margin-left: 28%;">Min 50% Off</span></p>
+                </div>
+            </div>
+            
+           
+            
+        </div>
+
+        
+        
+        <br/>
+        <br/>
+        <span style="font-size: 25px; font-weight: bold; letter-spacing: 0.15cm;">TRENDING IN WESTERN WEAR</span>
+        <br>
+        <div class="dotd">
+            <div class="card" style="width: 18rem;flex-grow: 2;"  onclick="clickOnTee()">
+                <img src="images/tshirt.jpg" class="card-img-top" alt="Men's Fashion Sale" style="width: 100%; height: 150px" >
+                <div class="card-body" style="background-color: white;">
+                <p class="card-text"><span style="font-weight: bold;text-align:center; font-size: 22px; font-family:sans-serif">Vibrant Colourblocked </span><br/><span style="font-size: 12px">The opposite ends of the color palette meets</span></p>
+                </div>
+            </div>
+            <div style="flex-grow: 2; width: 25px"></div>
+            <div class="card" style="width: 18rem; flex-grow: 2">
+                <img src="images/tiww2.jfif" class="card-img-top" alt="Men's Fashion Sale"  style="width: 100%; height: 150px">
+                <div class="card-body" style="background-color: white">
+                <p class="card-text"><span style="font-weight: bold;text-align:center; font-size: 22px; font-family:sans-serif">Superheroes Tees</span><br/><span style="font-size: 12px">Show off your fandom in these</span></p>
+                </div>
+            </div>
+            <div style="flex-grow: 2; width: 25px"></div>
+            <div class="card" style="width: 18rem; flex-grow: 2">
+                <img src="images/tiww3.jfif" class="card-img-top" alt="Men's Fashion Sale"  style="width: 100%; height: 150px">
+                <div class="card-body" style="background-color: rwhite">
+                <p class="card-text"><span style="font-weight: bold;text-align:center; font-size: 22px; font-family:sans-serif">Skinny Jeans</span><br/><span style="font-size: 12px">The right balance between edgy and effortless</span></p>
+                </div>
+            </div>
+            <div style="flex-grow: 2; width: 25px"></div>
+            <div class="card" style="width: 18rem; flex-grow: 2">
+                <img src="images/tiww4.jpg" class="card-img-top" alt="Men's Fashion Sale"  style="width: 100%; height: 150px">
+                <div class="card-body" style="background-color: white;">
+                <p class="card-text"><span style="font-weight: bold;text-align:center; font-size: 22px; font-family:sans-serif">Versatile Striped Collection</span><br/><span style="font-size: 12px">On Myntra Unique Brands</span></p>
+                </div>
+            </div>
+        </div>
+
+        <br/>
+        <br/>
+
+        <div class="dotd">
+            <div class="card" style="width: 18rem; flex-grow: 2;">
+                <img src="images/tiww5.jfif" class="card-img-top" alt="Men's Fashion Sale" style="width: 100%; height: 150px">
+                <div class="card-body" style="background-color: white;">
+                <p class="card-text"><span style="font-weight: bold;text-align:center; font-size: 22px; font-family:sans-serif">Moss and Melange </span><br/><span style="font-size: 12px">The colors of this season</span></p>
+                </div>
+            </div>
+            <div style="flex-grow: 2; width: 25px"></div>
+            <div class="card" style="width: 18rem;flex-grow: 2">
+                <img src="images/tiww6.jfif" class="card-img-top" alt="Men's Fashion Sale"  style="width: 100%; height: 150px">
+                <div class="card-body" style="background-color: white">
+                <p class="card-text"><span style="font-weight: bold;text-align:center; font-size: 22px; font-family:sans-serif">Mod Blocking </span><br/><span style="font-size: 12px">On Myntra Unique Brands</span></p>
+                </div>
+            </div>
+            <div style="flex-grow: 2; width: 25px"></div>
+            <div class="card" style="width: 18rem; flex-grow: 2">
+                <img src="images/tiww7.jpg" class="card-img-top" alt="Men's Fashion Sale"  style="width: 100%; height: 150px">
+                <div class="card-body" style="background-color: white">
+                <p class="card-text"><span style="font-weight: bold;text-align:center; font-size: 22px; font-family:sans-serif">Red Tops and Tees </span><br/><span style="font-size: 12px">The official symbol of all thins bold</span></p>
+                </div>
+            </div>
+            <div style="flex-grow: 2; width: 25px"></div>
+            <div class="card" style="width: 18rem; flex-grow: 2">
+                <img src="images/tiww8.webp" class="card-img-top" alt="Men's Fashion Sale"  style="width: 100%; height: 150px">
+                <div class="card-body" style="background-color: white">
+                <p class="card-text"><span style="font-weight: bold; text-align:center; font-size: 22px; font-family:sans-serif">Smart daily wear tees</span><br/><span style="font-size: 12px">Something new for every day</span></p>
+                </div>
+            </div>
+        </div>
+
+
+        
+        
+        <br/>
+        <br/>
+        <span style="font-size: 25px; font-weight: bold; letter-spacing: 0.15cm;">TRENDING IN INDIAN WEAR</span>
+        <br>
+        <div class="dotd">
+            <div class="card" style="width: 18rem; flex-grow: 2;">
+                <img src="images/tiiw1.jpg" class="card-img-top" alt="Men's Fashion Sale" style="width: 100%; height: 150px">
+                <div class="card-body" style="background-color: white">
+                <p class="card-text"><span style="font-weight: bold;text-align:center; font-size: 22px; font-family:sans-serif">All White Indian Wear </span><br/><span style="font-size: 12px">For an always cool outlook</span></p>
+                </div>
+            </div>
+            <div style="flex-grow: 2; width: 25px"></div>
+            <div class="card" style="width: 18rem; flex-grow: 2">
+                <img src="images/tiiw2.webp" class="card-img-top" alt="Men's Fashion Sale"  style="width: 100%; height: 150px">
+                <div class="card-body" style="background-color: white">
+                <p class="card-text"><span style="font-weight: bold;text-align:center; font-size: 22px; font-family:sans-serif">Ethnic Casuals </span><br/><span style="font-size: 12px">Indians surely know the route to comfort</span></p>
+                </div>
+            </div>
+            <div style="flex-grow: 2; width: 25px"></div>
+            <div class="card" style="width: 18rem; flex-grow: 2">
+                <img src="images/tiiw3.jpeg" class="card-img-top" alt="Men's Fashion Sale"  style="width: 100%; height: 150px">
+                <div class="card-body" style="background-color: white">
+                <p class="card-text"><span style="font-weight: bold;text-align:center; font-size: 22px; font-family:sans-serif">Printed Kurta Sets</span><br/><span style="font-size: 12px">Festive wear that your family will love</span></p>
+                </div>
+            </div>
+            <div style="flex-grow: 2; width: 25px"></div>
+            <div class="card" style="width: 18rem; flex-grow: 2">
+                <img src="images/tiiw4.jpg" class="card-img-top" alt="Men's Fashion Sale"  style="width: 100%; height: 150px">
+                <div class="card-body" style="background-color: white">
+                <p class="card-text"><span style="font-weight: bold;text-align:center; font-size: 22px; font-family:sans-serif">Kurta Sets By BIBA</span><br/><span style="font-size: 18px">We have found you the perfect match</span></p>
+                </div>
+            </div>
+            
+            
+        </div>
+
+
+        
+        
+
+        <br/>
+        <br/>
+        <span style="font-size: 25px; font-weight: bold; letter-spacing: 0.15cm;">TRENDING IN FOOTWEAR</span>
+        <br>
+        <div class="dotd">
+            <div class="card" style="width: 18rem; flex-grow: 2;">
+                <img src="images/shoes1.jpg " class="card-img-top" alt="Men's Fashion Sale" style="width: 100%; height: 150px">
+                <div class="card-body" style="background-color: rgb(247, 235, 243);">
+                <p class="card-text"><span style="font-weight: bold;text-align:center; font-size: 22px; font-family:sans-serif">Neutral Shades</span><br/><span style="font-size: 12px">Ticks all the boxes and pairs with everything</span></p>
+                </div>
+            </div>
+            <div style="flex-grow: 2; width: 25px"></div>
+            <div class="card" style="width: 18rem; flex-grow: 2">
+                <img src="images/shoes2.jpg" class="card-img-top" alt="Men's Fashion Sale"  style="width: 100%; height: 150px">
+                <div class="card-body" style="background-color: rgb(247, 235, 243);">
+                <p class="card-text"><span style="font-weight: bold;text-align:center; font-size: 22px; font-family:sans-serif">Sneakers for Dancers </span><br/><span style="font-size: 12px">These were made for all your moves</span></p>
+                </div>
+            </div>
+            <div style="flex-grow: 2; width: 25px"></div>
+            <div class="card" style="width: 18rem; flex-grow: 2">
+                <img src="images/shoes3.jpeg" class="card-img-top" alt="Men's Fashion Sale"  style="width: 100%; height: 150px">
+                <div class="card-body" style="background-color: rgb(247, 235, 243);">
+                <p class="card-text"><span style="font-weight: bold;text-align:center; font-size: 22px; font-family:sans-serif">Printed sneakers</span><br/><span style="font-size: 12px">Give your staples a unique move over!</span></p>
+                </div>
+            </div>
+            <div style="flex-grow: 2; width: 25px"></div>
+            <div class="card" style="width: 18rem;  flex-grow: 2">
+                <img src="images/shoes4.jpg" class="card-img-top" alt="Men's Fashion Sale"  style="width: 100%; height: 150px">
+                <div class="card-body" style="background-color: rgb(247, 235, 243);">
+                <p class="card-text"><span style="font-weight: bold;text-align:center; font-size: 22px; font-family:sans-serif">Flip Flops and Sliders</span><br/><span style="font-size: 12px">Slide right into comfort and ease</span></p>
+                </div>
+            </div>
+            
+            
+        </div>
+
+
+        <br/>
+        <br/>
+        
+        
+
+
+        <div id="footer">
+            <div style="flex-grow: 1; font-weight: bold; font-size: 15px; margin-left: 8%;">ONLINE SHOPPING
+                <div style="height: 4%;"></div>
+                <ul style="list-style: none;">
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>Kids</li>
+                    <li>Home & Living</li>
+                    <li>Beauty</li>
+                    <li>Gift Cards</li>
+                    <li>Myntra Insider <span style="color: white;background-color: red; border-radius: 10%;">New</span></li>
+                </ul>
+            </div>
+            <div style="flex-grow: 1; font-weight: bold; font-size: 15px">USEFUL LINKS
+                <div style="height: 4%;"></div>
+                <ul style="list-style: none;">
+                    <li>Contact Us</li>
+                    <li>FAQ</li>
+                    <li>T&C</li>
+                    <li>Terms Of Use</li>
+                    <li>Track Orders</li>
+                    <li>Shipping</li>
+                    <li>Cancellation</li>
+                    <li>Returns</li>
+                    <li>White Hat</li>
+                    <li>Blogs</li>
+                    <li>Careers</li>
+                    <li>Privacy Policy</li>
+                    <li>Site Map</li>
+                </ul>
+            </div>
+            <div style="flex-grow: 1; font-weight: bold; font-size: 15px">EXPERIENCE MYNTRA APP ON MOBILE
+                <div style="height: 4%;"></div>
+                <img src="images/googleplay.png" style="height: 45px; width: 150px;"/>
+                <img src="images/app store.png" style="height: 45px; width: 150px;"/>
+                <div style="height: 4%;"></div>
+                <div>KEEP IN TOUCH</div>
+                
+                <i style="height: 4%; width: 4%;" class="fa fa-facebook-square" ></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-youtube"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
